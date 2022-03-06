@@ -1,8 +1,4 @@
-def ask_correct(ans, notIn, inside, best):
-    guess = input("Input the solution, "
-                  "use uppercase for letters in position, "
-                  "lowercase for letters included but not in place "
-                  "and \'-\' for empty (Example: L-a-i)\n")
+def ask_correct(guess, ans, notIn, inside, best):
     for i in range(len(guess)):
         if guess[i] == "-":
             notIn += best[i]
